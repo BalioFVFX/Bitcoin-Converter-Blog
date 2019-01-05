@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_btc"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/bitcoin"/>
+
+    <TextView
+        android:id="@+id/tv_btc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_btc"
+        android:layout_centerHorizontal="true"
+        android:text="No data available"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="REFRESH"
+        android:layout_below="@id/tv_btc"
+        android:layout_centerHorizontal="true"
+        style="@style/Base.Widget.AppCompat.Button.Colored"/>
+
+</RelativeLayout>
